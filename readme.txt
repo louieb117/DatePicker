@@ -1,4 +1,4 @@
-Welcome to the DatePicker readme file. 
+Welcome to the Project.DatePicker readme file.
 
 This application is to help couples figure out how to spend a date by recommending different dates filtered 
 by the cost, area, and the time of day. 

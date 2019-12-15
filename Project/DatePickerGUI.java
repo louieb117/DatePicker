@@ -1,3 +1,5 @@
+package Project;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -36,7 +38,7 @@ public class DatePickerGUI extends Application
    public void start(Stage primaryStage)
    {
       // Title Scene
-      Image backgroundImage = new Image("file:art.jpg");
+      Image backgroundImage = new Image("Project/resources/art.jpg");
 
       ImageView bgIView = new ImageView(backgroundImage);
       bgIView.setFitWidth(1080);
@@ -75,7 +77,7 @@ public class DatePickerGUI extends Application
       // Filter Scene
       FileGrabber fGrabber = new FileGrabber();
       
-      Image backgroundImage2 = new Image("file:art.jpg");
+      Image backgroundImage2 = new Image("Project/resources/art.jpg");
 
       ImageView bgIView2 = new ImageView(backgroundImage);
       bgIView2.setFitWidth(1080);
@@ -169,7 +171,7 @@ public class DatePickerGUI extends Application
       
       
       // Result Scene
-      Image backgroundImage3 = new Image("file:art.jpg");
+      Image backgroundImage3 = new Image("Project/resources/art.jpg");
       
       ImageView bgIView3 = new ImageView(backgroundImage);
       bgIView3.setFitWidth(1080);

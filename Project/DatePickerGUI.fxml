@@ -3,9 +3,26 @@
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
+<?import javafx.scene.Group.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.stage.Stage?>
 
-<AnchorPane>
 
-</AnchorPane>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javefx.com/fxml">
+    <ImageView fitWidth="1080" preserveRatio="true" cache="true">
+        <Image url="/Project/resources/art.jpg" />
+    </ImageView>
+    <Rectangle x="383" y="175" width="300" height="150" fill="#808080"/>
+    <VBox spacing="55" alignment="CENTER">
+        <Label fx:id="titleLabel" text="Where To?" font="20" textFill="white"/>
+
+    </VBox>
+
+</StackPane>
+
+
+

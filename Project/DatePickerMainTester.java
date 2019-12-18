@@ -1,29 +1,24 @@
 package Project;
 
 import javafx.application.Application;
-import javafx.stage.Stage;
-import javafx.scene.Scene;
-import javafx.scene.Group;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.ToggleGroup;
-import javafx.scene.control.TextArea;
-import javafx.scene.shape.Rectangle;
-import javafx.scene.paint.Color;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 
 import static javafx.scene.text.Font.font;
 
-public class DatePickerGUI extends Application
+public class DatePickerMainTester extends Application
 {
    Stage window;
    Scene titleScene, filterScene, resultScene;

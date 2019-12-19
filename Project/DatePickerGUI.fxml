@@ -19,7 +19,7 @@
     <Rectangle x="383" y="175" width="300" height="150" fill="#808080"/>
     <VBox spacing="55" alignment="CENTER">
         <Label fx:id="titleLabel" text="Where To?" font="20" textFill="white"/>
-
+        <Button fx:id="welcomeButton" text="Welcome" mnemonicParsing="false" onAction="#handleWelcomeButtonAction"/>
     </VBox>
 
 </StackPane>

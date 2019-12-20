@@ -10,9 +10,8 @@ import javafx.stage.Stage;
 public class DatePickerMainTester extends Application {
    @Override
    public void start(Stage window) throws Exception {
-      //Parent root = FXMLLoader.load(getClass().getResource("TitleSceneLayout.fxml"));
-      //Parent root = FXMLLoader.load(getClass().getResource("FilterSceneLayout.fxml"));
-      Parent root = FXMLLoader.load(getClass().getResource("ResultSceneLayout.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("TitleSceneLayout.fxml"));
+
       Scene titleScene = new Scene(root,1020, 630);
 
       // Stage

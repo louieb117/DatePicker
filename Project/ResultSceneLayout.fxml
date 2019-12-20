@@ -8,8 +8,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.Group?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
 
 <Group xmlns="http://javafx.com/javafx" xmlns:fx="http://javefx.com/fxml"
        fx:controller="Project.DatePickerController">
@@ -23,20 +23,18 @@
     <StackPane>
 
         <padding>
-            <Insets top="200"   left="345"/>
+            <Insets top="100"   left="232"/>
         </padding>
 
-        <VBox spacing="55" alignment="CENTER">
+        <VBox spacing="25" alignment="CENTER">
 
-            <TextField prefColumnCount="49">
-
-            </TextField>
+            <TextArea prefColumnCount="49" prefRowCount="18"/>
 
             <HBox spacing="350" alignment="CENTER">
 
                 <Button fx:id="newSearchButton" text="New Search" onAction="#handleNewSearchButtonAction"/>
 
-                <Button fx:id="exitButton" text="Exit" onAction="#handleExitButtonAction"/>
+                <Button fx:id="exitButton" text="Exit" onAction="#handleExitButtonAction" prefWidth="75"/>
 
             </HBox>
 

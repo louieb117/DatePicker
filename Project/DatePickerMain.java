@@ -211,8 +211,6 @@ public class DatePickerMain extends Application
       // Stage
       window = primaryStage;
       window.setScene(titleScene);
-      //window.setScene(filterScene);
-      //window.setScene(resultScene);
       window.setResizable(false);
       window.setTitle("Where To?");
       window.show(); 

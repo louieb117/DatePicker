@@ -8,24 +8,22 @@ import javafx.stage.Stage;
 
 
 public class DatePickerMainTester extends Application {
-   Stage window;
-   Scene titleScene;
-   
-   public static void main(String[] args) {
-      // Launch the application.
-      launch(args);
-   }
-   
    @Override
    public void start(Stage window) throws Exception {
-      Parent root = FXMLLoader.load(getClass().getResource("TitleSceneLayout.fxml"));
+      //Parent root = FXMLLoader.load(getClass().getResource("TitleSceneLayout.fxml"));
+      Parent root = FXMLLoader.load(getClass().getResource("FilterSceneLayout.fxml"));
 
-      titleScene = new Scene(root,1020, 630);
+      Scene titleScene = new Scene(root,1020, 630);
 
       // Stage
       window.setScene(titleScene);
       window.setResizable(false);
       window.setTitle("Where To?");
       window.show(); 
+   }
+
+   public static void main(String[] args) {
+      // Launch the application.
+      launch(args);
    }
 }

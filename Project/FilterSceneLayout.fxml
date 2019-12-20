@@ -1,14 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.GridPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Project.DatePickerController"
-            prefHeight="400.0" prefWidth="600.0">
+<Group xmlns="http://javafx.com/javafx" xmlns:fx="http://javefx.com/fxml"
+       fx:controller="Project.DatePickerController">
 
-</AnchorPane>
+    <ImageView fitWidth="1080" preserveRatio="true" cache="true">
+        <Image url="/Project/resources/art.jpg" />
+    </ImageView>
+
+    <Rectangle x="185" y="75" width="660" height="400" fill="#808080"/>
+
+    <GridPane hgap="160" vgap="40" alignment="CENTER">
+        <padding>
+            <Insets top="100"   left="240"/>
+        </padding>
+
+        <Label text="Price" textFill="white" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <font>
+                <Font size="16"/>
+            </font>
+        </Label>
+
+        <VBox spacing="55" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <fx:define>
+                <ToggleGroup fx:id="PriceRBGroup"/>
+            </fx:define>
+            <RadioButton fx:id="price1Button" text="( )" textFill="white" toggleGroup="$PriceRBGroup" selected="true">
+
+            </RadioButton>
+
+            <RadioButton fx:id="price2Button" text="($)" textFill="white" toggleGroup="$PriceRBGroup">
+
+            </RadioButton>
+
+            <RadioButton fx:id="price3Button" text="($$)" textFill="white" toggleGroup="$PriceRBGroup">
+
+            </RadioButton>
+
+            <RadioButton fx:id="price4Button" text="($$$)     " textFill="white" toggleGroup="$PriceRBGroup">
+
+            </RadioButton>
+        </VBox>
+
+        <Label text="Time of Day" textFill="white" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <font>
+                <Font size="16"/>
+            </font>
+        </Label>
+
+        <VBox spacing="55" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <fx:define>
+                <ToggleGroup fx:id="TimeOfDayRBGroup"/>
+            </fx:define>
+
+            <RadioButton fx:id="morningButton" text="Morning" textFill="white" toggleGroup="$TimeOfDayRBGroup" selected="true">
+
+            </RadioButton>
+
+            <RadioButton fx:id="dayButton" text="Day" textFill="white" toggleGroup="$TimeOfDayRBGroup">
+
+            </RadioButton>
+
+            <RadioButton fx:id="nightButton" text="Night" textFill="white" toggleGroup="$TimeOfDayRBGroup">
+
+            </RadioButton>
+        </VBox>
+
+        <Label text="Place" textFill="white" GridPane.columnIndex="2" GridPane.rowIndex="0">
+            <font>
+                <Font size="16"/>
+            </font>
+        </Label>
+
+        <VBox spacing="55" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <RadioButton fx:id="northCountyButton" text="North County" textFill="white">
+
+            </RadioButton>
+
+            <RadioButton fx:id="centralCountyButton" text="Central County" textFill="white" selected="true">
+
+            </RadioButton>
+
+            <RadioButton fx:id="eastCountyButton" text="East County" textFill="WHITE">
+
+            </RadioButton>
+
+            <RadioButton fx:id="southCountyButton" text="South County" textFill="WHITE">
+
+            </RadioButton>
+        </VBox>
+        <Button fx:id="searchButton" text="Search" mnemonicParsing="false" onAction="#handleSearchButtonAction"
+                GridPane.columnIndex="1" GridPane.rowIndex="2" maxWidth="300"/>
+    </GridPane>
+</Group>

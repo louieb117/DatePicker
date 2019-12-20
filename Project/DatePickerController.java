@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 public class DatePickerController
 {
     @FXML
-    Button welcomeButton, searchButton;
+    Button welcomeButton, searchButton, newSearchButton, exitButton;
     @FXML
     RadioButton price1Button, price2Button, price3Button, price4Button,
                 morningButton, dayButton, nightButton,
@@ -36,5 +36,19 @@ public class DatePickerController
         resultScene = new Scene(root,1020, 630);
         Window.setScene(resultScene);
         Window.show();
+    }
+
+    public void handleNewSearchButtonAction(ActionEvent event)  throws Exception{
+        Window = (Stage) newSearchButton.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("FilterSceneLayout.fxml"));
+        filterScene = new Scene(root,1020, 630);
+        Window.setScene(filterScene);
+        Window.show();
+    }
+
+    public void handleExitButtonAction(ActionEvent event)  throws Exception{
+        Window = (Stage) exitButton.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("FilterSceneLayout.fxml"));
+        Window.close();
     }
 }

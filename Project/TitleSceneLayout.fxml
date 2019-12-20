@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.Group?>
+<?import javafx.scene.text.Font?>
 
 <Group xmlns="http://javafx.com/javafx" xmlns:fx="http://javefx.com/fxml"
        fx:controller="Project.DatePickerController">
@@ -19,15 +20,20 @@
 
     <StackPane>
         <padding>
-            <Insets top="205" bottom="205" right="485" left="485"/>
+            <Insets top="200"   left="345"/>
         </padding>
 
-        <Rectangle x="383" y="175" width="300" height="150" fill="#808080"/>
+        <Rectangle width="340" height="150" fill="#808080"/>
 
         <VBox spacing="55" alignment="CENTER">
-            <Label text="Where To?" textFill="white" />
+            <Label text="Where To?" textFill="white">
+                <font>
+                    <Font size="20"/>
+                </font>
+            </Label>
             <Button fx:id="welcomeButton" text="Welcome" mnemonicParsing="false" onAction="#handleWelcomeButtonAction"/>
         </VBox>
     </StackPane>
+
 </Group>
 

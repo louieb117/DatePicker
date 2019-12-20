@@ -20,7 +20,7 @@ public class DatePickerMainTester extends Application {
    public void start(Stage window) throws Exception {
       Parent root = FXMLLoader.load(getClass().getResource("TitleSceneLayout.fxml"));
 
-      titleScene = new Scene(root,1066, 630);
+      titleScene = new Scene(root,1020, 630);
 
       // Stage
       window.setScene(titleScene);

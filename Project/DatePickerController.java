@@ -31,6 +31,10 @@ public class DatePickerController
     }
 
     public void handleSearchButtonAction(ActionEvent event)  throws Exception{
+
+
+
+
         Window = (Stage) searchButton.getScene().getWindow();
         root = FXMLLoader.load(getClass().getResource("ResultSceneLayout.fxml"));
         resultScene = new Scene(root,1020, 630);

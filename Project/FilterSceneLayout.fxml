@@ -35,21 +35,21 @@
 
         <VBox spacing="55" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <fx:define>
-                <ToggleGroup fx:id="PriceRBGroup"/>
+                <ToggleGroup fx:id="priceRBGroup"/>
             </fx:define>
-            <RadioButton fx:id="price1Button" text="( )" textFill="white" toggleGroup="$PriceRBGroup" selected="true">
+            <RadioButton fx:id="price1Button" text="( )" textFill="white" toggleGroup="$priceRBGroup" selected="true">
 
             </RadioButton>
 
-            <RadioButton fx:id="price2Button" text="($)" textFill="white" toggleGroup="$PriceRBGroup">
+            <RadioButton fx:id="price2Button" text="($)" textFill="white" toggleGroup="$priceRBGroup">
 
             </RadioButton>
 
-            <RadioButton fx:id="price3Button" text="($$)" textFill="white" toggleGroup="$PriceRBGroup">
+            <RadioButton fx:id="price3Button" text="($$)" textFill="white" toggleGroup="$priceRBGroup">
 
             </RadioButton>
 
-            <RadioButton fx:id="price4Button" text="($$$)     " textFill="white" toggleGroup="$PriceRBGroup">
+            <RadioButton fx:id="price4Button" text="($$$)     " textFill="white" toggleGroup="$priceRBGroup">
 
             </RadioButton>
         </VBox>
@@ -62,18 +62,18 @@
 
         <VBox spacing="55" GridPane.columnIndex="1" GridPane.rowIndex="1">
             <fx:define>
-                <ToggleGroup fx:id="TimeOfDayRBGroup"/>
+                <ToggleGroup fx:id="timeOfDayRBGroup"/>
             </fx:define>
 
-            <RadioButton fx:id="morningButton" text="Morning" textFill="white" toggleGroup="$TimeOfDayRBGroup" selected="true">
+            <RadioButton fx:id="morningButton" text="Morning" textFill="white" toggleGroup="$timeOfDayRBGroup" selected="true">
 
             </RadioButton>
 
-            <RadioButton fx:id="dayButton" text="Day" textFill="white" toggleGroup="$TimeOfDayRBGroup">
+            <RadioButton fx:id="dayButton" text="Day" textFill="white" toggleGroup="$timeOfDayRBGroup">
 
             </RadioButton>
 
-            <RadioButton fx:id="nightButton" text="Night" textFill="white" toggleGroup="$TimeOfDayRBGroup">
+            <RadioButton fx:id="nightButton" text="Night" textFill="white" toggleGroup="$timeOfDayRBGroup">
 
             </RadioButton>
         </VBox>

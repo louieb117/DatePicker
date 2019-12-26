@@ -1,5 +1,7 @@
 package Project;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -7,12 +9,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.RadioButton;
+import javafx.scene.control.Toggle;
+import javafx.scene.control.ToggleGroup;
 import javafx.stage.Stage;
 
 public class DatePickerController
 {
     @FXML
     Button welcomeButton, searchButton, newSearchButton, exitButton;
+    @FXML
+    ToggleGroup priceRBGroup, timeOfDayRBGroup;
     @FXML
     RadioButton price1Button, price2Button, price3Button, price4Button,
                 morningButton, dayButton, nightButton,
@@ -31,10 +37,6 @@ public class DatePickerController
     }
 
     public void handleSearchButtonAction(ActionEvent event)  throws Exception{
-
-
-
-
         Window = (Stage) searchButton.getScene().getWindow();
         root = FXMLLoader.load(getClass().getResource("ResultSceneLayout.fxml"));
         resultScene = new Scene(root,1020, 630);
@@ -55,4 +57,9 @@ public class DatePickerController
         root = FXMLLoader.load(getClass().getResource("FilterSceneLayout.fxml"));
         Window.close();
     }
+
+    public RadioButton getPrice1Button(){
+        return price1Button;
+    }
 }
+

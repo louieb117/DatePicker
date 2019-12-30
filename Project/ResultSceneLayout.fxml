@@ -28,7 +28,7 @@
 
         <VBox spacing="25" alignment="CENTER">
 
-            <TextArea fx:id="resultTextArea" prefColumnCount="49" prefRowCount="18"/>
+            <TextArea fx:id="resultTextArea" prefColumnCount="49" prefRowCount="18" text=''/>
 
             <HBox spacing="350" alignment="CENTER">
 

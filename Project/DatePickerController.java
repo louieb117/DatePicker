@@ -7,10 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.Toggle;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 public class DatePickerController
@@ -23,6 +20,12 @@ public class DatePickerController
     RadioButton price1Button, price2Button, price3Button, price4Button,
                 morningButton, dayButton, nightButton,
                 northCountyButton, eastCountyButton, centralCountyButton, southCountyButton;
+    @FXML
+    TextArea resultTextArea;
+
+    DatePickerFilePicker finder = new DatePickerFilePicker(price1Button, price2Button, price3Button, price4Button,
+                                                            morningButton, dayButton, nightButton, northCountyButton,
+                                                            eastCountyButton, centralCountyButton, southCountyButton);
 
     Stage Window;
     Parent root;
@@ -37,11 +40,14 @@ public class DatePickerController
     }
 
     public void handleSearchButtonAction(ActionEvent event)  throws Exception{
+
         Window = (Stage) searchButton.getScene().getWindow();
         root = FXMLLoader.load(getClass().getResource("ResultSceneLayout.fxml"));
         resultScene = new Scene(root,1020, 630);
         Window.setScene(resultScene);
         Window.show();
+
+        //resultTextArea.setText("hello");
     }
 
     public void handleNewSearchButtonAction(ActionEvent event)  throws Exception{
@@ -56,10 +62,6 @@ public class DatePickerController
         Window = (Stage) exitButton.getScene().getWindow();
         root = FXMLLoader.load(getClass().getResource("FilterSceneLayout.fxml"));
         Window.close();
-    }
-
-    public RadioButton getPrice1Button(){
-        return price1Button;
     }
 }
 
